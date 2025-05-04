@@ -9,16 +9,18 @@ export const Description = styledComponents.div`
 
 export const Name = styledComponents.p`
     font-weight: bold;
-    font-size: 25;
-    
+    margin: 10px;
 `;
 
 export const Tag = styledComponents.p`
+    margin: 0;
     color: grey;
 `;
 
 export const Location = styledComponents.p`
+    margin: 0;    
     color: grey;
+    
 `;
 
 export const Stats = styledComponents.ul`
@@ -31,4 +33,9 @@ export const ListElement = styledComponents.li`
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 33.3%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #bbbbbb;
 `;

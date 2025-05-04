@@ -2,10 +2,7 @@ import css from "./FriendList.module.css";
 
 export const Item = ({ ...friend }) => {
   return (
-    <li className={css.listItem} key={friend.id}>
-      <span
-        className={friend.isOnline ? `${css.online}` : `${css.offline}`}
-      ></span>
+    <li className={css.listItem}>
       <img
         className="avatar"
         src={friend.avatar}
@@ -13,6 +10,9 @@ export const Item = ({ ...friend }) => {
         width="48"
       />
       <p className="name">{friend.name}</p>
+      <span className={friend.isOnline ? `${css.online}` : `${css.offline}`}>
+        {friend.isOnline ? "Online" : "Offline"}
+      </span>
     </li>
   );
 };

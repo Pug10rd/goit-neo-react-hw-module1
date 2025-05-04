@@ -10,7 +10,6 @@ export const App = () => {
   return (
     <div
       style={{
-        height: "100vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -27,12 +26,7 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={data} />
-      <FriendList
-        friends={friends}
-        avatar={friends.avatar}
-        name={friends.name}
-        isOnline={friends.isOnline}
-      />
+      <FriendList friends={friends} />
       <TransactionHistory items={items} />
     </div>
   );
